@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Air-BnB';
+  componentTitle = 'i am a component from component.ts';
+
+  clickHandler() {
+    alert('fuck off from app component');
+  }
 }

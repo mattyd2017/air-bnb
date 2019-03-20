@@ -22,11 +22,19 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "../Air-BnB/src/style"
+              ]
+            },
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "../Air-BnB/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
+            
             "scripts": [],
             "es5BrowserSupport": true
+           
           },
           "configurations": {
             "production": {
@@ -53,6 +61,7 @@
                 }
               ]
             }
+         
           }
         },
         "serve": {
@@ -80,7 +89,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
