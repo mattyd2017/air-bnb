@@ -19,6 +19,7 @@
       true,
       140
     ],
+    
     "member-access": false,
     "member-ordering": [
       true,
@@ -72,5 +73,6 @@
     "component-class-suffix": true,
     "directive-class-suffix": true,
     "no-string-literal": false,
+
   }
 }
