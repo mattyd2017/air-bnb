@@ -1,0 +1,5 @@
+<agm-map (mapReady)="mapReadyHandler()" [latitude]="lat" [longitude]="lng" [zoom]="13">
+  <agm-circle *ngIf="!isPostionError && lat && lng" [latitude]="lat" [longitude]="lng" [radius]="800" [fillColor]="'darkblue'" [fillOpacity]="0.4"></agm-circle>
+  <agm-info-window *ngIf="isPostionError" [latitude]="0" [longitude]="0" [maxWidth]="300" [isOpen]=true>Opps sorry there was a problem loading the map service location please contact the host for any additional information</agm-info-window>
+</agm-map>
+ 
