@@ -37,8 +37,12 @@ class FakeDb {
         dailyRate: 23
     }];
     this.users = [{
-      username: "Power User",
-      email: "power@powerful.com",
+      username: "Powerfully User",
+      email: "powerfully@powerful.com",
+      password: "password123"
+    }, {
+      username: "Powerful User",
+      email: "powerful@power.com",
       password: "password123"
     }]
   } 
@@ -49,6 +53,7 @@ class FakeDb {
 
   pushDataToDb() {
     const user = new User(this.users[0]);
+    const user2 = new User(this.users[1]);
 
     this.rentals.forEach((rental) => {
         const newRental = new Rental(rental);
@@ -58,6 +63,7 @@ class FakeDb {
         newRental.save();
     });
     user.save();
+    user2.save();
   }
  async seedDb() {
      await this.cleanDb();
