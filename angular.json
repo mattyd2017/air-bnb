@@ -30,7 +30,8 @@
             "styles": [
               "src/styles.scss",
               "../Air-BnB/node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "../Air-BnB/node_modules/font-awesome/css/font-awesome.min.css"
+              "../Air-BnB/node_modules/font-awesome/css/font-awesome.min.css",
+              "../Air-BnB/node_modules/ngx-toastr/toastr.css"
             ],
             
             "scripts": [],
