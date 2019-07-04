@@ -5,6 +5,7 @@ const config = require('./config/dev');
 const FakeDb = require('./fake-db');
 const Rental = require('./models/rental');
 
+
 const rentalRoutes = require('./routes/rentals'), 
     userRoutes = require('./routes/users'),
     bookingRoutes = require('./routes/bookings');
