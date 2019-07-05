@@ -1,10 +1,11 @@
 # AirBnB
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6. and node js for the api and mongdb
 
 ## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+if not got node in stall node and angular cli then in angular cli run npm install to intall all referenced node packages in the package.json in angular 
+Open terminal in the server folder or navigate from commandline to the server folder in the project and run node index.js to start node server 
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`
 
 ## Code scaffolding
 
