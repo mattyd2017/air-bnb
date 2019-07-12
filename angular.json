@@ -34,7 +34,10 @@
               "../Air-BnB/node_modules/ngx-toastr/toastr.css"
             ],
             
-            "scripts": [],
+            "scripts": [
+              "../Air-BnB/node_modules/jquery/dist/jquery.js",
+              "../Air-BnB/node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
             "es5BrowserSupport": true
            
           },

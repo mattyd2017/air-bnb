@@ -19,6 +19,24 @@
         margin: 0;
       }
 
+      &-owner {
+        float: right;
+
+        img{
+          height: 50px;
+          width: 70px;
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto;
+        }
+
+        span {
+          display: block;
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+
       &-title {
         margin-bottom: 5px;
         font-size: 40px;

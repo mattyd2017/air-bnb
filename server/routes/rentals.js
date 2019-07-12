@@ -51,10 +51,10 @@ router.get('', function(req, res) {
             return res.status(422).send({ errors: normalizeErrors(err.errors)});
         }
         if (city && foundRentals.length === 0) {
-            res.status(422).send({errors: [{title: 'No rentals found', detail: `There are no available BnBs in this city! ${city}`}]});
+            return res.status(422).send({errors: [{title: 'No rentals found', detail: `There are no available BnBs in this city! ${city}`}]});
         }
         return res.json(foundRentals);
     });    
 });
 
-module.exports = router;
+module.exports = router; 
