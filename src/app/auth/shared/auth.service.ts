@@ -5,7 +5,7 @@ import 'rxjs/Rx';
 import * as jwt from 'jsonwebtoken';
 import { HttpClient } from '@angular/common/http';
 import * as moment from 'moment';
-import { shouldCallLifecycleInitHook } from '@angular/core/src/view';
+
 
 class DecodedToken {
    exp: number = 0;
