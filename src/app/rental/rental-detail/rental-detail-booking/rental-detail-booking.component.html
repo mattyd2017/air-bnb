@@ -12,7 +12,7 @@
       </div>
     </form>
       <button (click)="openConfirmModal(content)" [disabled]="!bookingForm.form.valid || !newBooking.startAt || !newBooking.endAt"
-      class="btn btn-danger btn-confirm btn-block">Reserve place now</button>
+      class="btn btn-primary btn-confirm btn-block">Reserve place now</button>
     <hr>
   </ng-container>
     <div *ngIf="!auth.IsAuthenticated()" class="should-login">

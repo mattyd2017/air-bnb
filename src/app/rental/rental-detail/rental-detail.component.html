@@ -17,10 +17,10 @@
             <h2 class="rental-type {{rental.category}}">{{rental.shared ? 'Shared' : 'Whole' }} {{rental.category}}</h2>
             <div class="rental-owner">
               
-              <img src="https://imageog.flaticon.com/icons/png/512/25/25694.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" alt="">
+              <img src="assets/images/house.png" alt="">
               <span>This air BnB is rented out by {{rental.user.username}}</span>
             </div>
-            <h1 class="rental-title">{{rental.title}}</h1>
+            <h1 class="rental-title">{{rental.title | ucwords}}</h1>
             <h2 class="rental-city">{{rental.city | ucwords}}</h2>
             <div class="rental-room-info">
               <span><i class="fa fa-building"></i>{{rental.bedrooms}} bedrooms</span>

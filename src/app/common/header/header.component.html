@@ -1,6 +1,6 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" routerLink="/rentals">Air BnB booking</a>
+  <a class="navbar-brand" routerLink="/rentals">Air BnB booking<img src="favicon.ico"></a>
     <div class="form-inline">
       <input #citySearch
           (keyup.enter)="search(citySearch.value)"
@@ -37,10 +37,12 @@
           </li>
           <div class="nav-item dropdown clickable">
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Landlord options
+                User options
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" routerLink="/rentals/new">Create your air bnb </a>
+                <a class="dropdown-item" routerLink="/manage/rentals">Manage your propertys </a>
+                <a class="dropdown-item" routerLink="/manage/bookings">Manage your bookings</a>
               </div>
             </div>      
         <li  class="nav-item clickable">
