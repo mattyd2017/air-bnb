@@ -14,12 +14,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule} from '@angular/router';
 import { HTTP_INTERCEPTORS} from '@angular/common/http';
 
-
-
-
-
-
-
 const routes: Routes = [
     {path: 'login', component: LoginComponent, canActivate: [AuthGuard]},
     {path: 'register', component: RegisterComponent, canActivate: [AuthGuard]}

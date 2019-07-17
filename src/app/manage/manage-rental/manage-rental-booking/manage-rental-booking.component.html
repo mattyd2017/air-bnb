@@ -1,0 +1,19 @@
+<button (click)="modalService.open(bookingModal)" type="button" class="btn btn-bwm btn-primary">Show Your Bookings</button> 
+
+<ng-template #bookingModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title title">Bookings on your property</h4>
+    
+  </div>
+  <div class="modal-body">
+    <div *ngFor="let booking of bookings; let i = index" class="bookings-inner-container"> 
+      <p><span>Date:</span> {{booking.startAt | formatDate}} - {{booking.endAt | formatDate}} </p>
+      <p><span>Guests:</span> {{booking.guests}}</p>
+      <p><span>Total Price:</span> £{{booking.totalPrice}}</p> 
+      <hr *ngIf="bookings.length != i + 1">
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-bwm btn-primary" (click)="modal.close('Close click')">Close</button>
+  </div>
+</ng-template>
