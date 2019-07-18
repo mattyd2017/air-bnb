@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 if not got node in stall node and angular cli then in angular cli run npm install to intall all referenced node packages in the package.json in angular 
 Open terminal in the server folder or navigate from commandline to the server folder in the project and run node index.js to start node server 
-Run `npm start` for a dev server. Navigate to `http://localhost:4200/`
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/` this isn't finished as there was a build errpr on deployment but works on localhost
 
 ## Code scaffolding
 
